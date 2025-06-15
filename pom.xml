@@ -1,61 +1,48 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
+<properties>
+    <maven.compiler.source>17</maven.compiler.source>
+    <maven.compiler.target>17</maven.compiler.target>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-    <groupId>org.example</groupId>
-    <artifactId>SeleniumTest</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <selenium-version>4.32.0</selenium-version>
+    <selenium-devtools-v137>4.33.0</selenium-devtools-v137>
+    <junit-jupiter-params>5.13.0</junit-jupiter-params>
+    <asertj-core-version>3.27.3</asertj-core-version>
 
-    <properties>
-        <maven.compiler.source>17</maven.compiler.source>
-        <maven.compiler.target>17</maven.compiler.target>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <junit-version>5.12.2</junit-version>
 
-        <selenium-version>4.32.0</selenium-version>
-        <selenium-devtools-v137>4.33.0</selenium-devtools-v137>
-        <junit-jupiter-params>5.13.0</junit-jupiter-params>
-        <asertj-core-version>3.27.3</asertj-core-version>
+</properties>
 
-        <junit-version>5.12.2</junit-version>
+<dependencies>
+<dependency>
+    <groupId>org.seleniumhq.selenium</groupId>
+    <artifactId>selenium-java</artifactId>
+    <version>${selenium-version}</version>
+</dependency>
 
-    </properties>
+<dependency>
+    <groupId>org.seleniumhq.selenium</groupId>
+    <artifactId>selenium-devtools-v137</artifactId>
+    <version>${selenium-devtools-v137}</version>
+</dependency>
 
-    <dependencies>
-        <dependency>
-            <groupId>org.seleniumhq.selenium</groupId>
-            <artifactId>selenium-java</artifactId>
-            <version>${selenium-version}</version>
-        </dependency>
+<dependency>
+    <groupId>org.junit.jupiter</groupId>
+    <artifactId>junit-jupiter-api</artifactId>
+    <version>${junit-version}</version>
+</dependency>
 
-        <dependency>
-            <groupId>org.seleniumhq.selenium</groupId>
-            <artifactId>selenium-devtools-v137</artifactId>
-            <version>${selenium-devtools-v137}</version>
-        </dependency>
+<dependency>
+    <groupId>org.junit.jupiter</groupId>
+    <artifactId>junit-jupiter-params</artifactId>
+    <version>${junit-jupiter-params}</version>
+    <scope>test</scope>
+</dependency>
 
-        <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-api</artifactId>
-            <version>${junit-version}</version>
-        </dependency>
+<dependency>
+    <groupId>org.assertj</groupId>
+    <artifactId>asertj-core</artifactId>
+    <version>${asertj-core-version}</version>
+    <scope>test</scope>
+</dependency>
 
-        <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-params</artifactId>
-            <version>${junit-jupiter-params}</version>
-            <scope>test</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>org.assertj</groupId>
-            <artifactId>assertj-core</artifactId>
-            <version>${asertj-core-version}</version>
-            <scope>test</scope>
-        </dependency>
-
-    </dependencies>
-
-
-</project>
+</dependencies>
