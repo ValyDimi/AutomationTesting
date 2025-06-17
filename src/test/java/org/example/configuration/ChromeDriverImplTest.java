@@ -66,6 +66,7 @@ public class ChromeDriverImplTest {
                 driver.navigate().forward();
                 Assertions.assertEquals(pageTitle, toClick);
                 break;
+
             }
         }
     }
