@@ -10,7 +10,8 @@ public class EdgeDriverConfiguration {
 
     public EdgeDriverConfiguration() {
         EdgeOptions edgeOptions = new EdgeOptions();
-        edgeOptions.addArguments("--start-maximized");
+//        edgeOptions.addArguments("--start-maximized");
+
         this.webDriver = new EdgeDriver(edgeOptions);
     }
 
@@ -18,4 +19,6 @@ public class EdgeDriverConfiguration {
         return webDriver;
     }
 }
+
+
 

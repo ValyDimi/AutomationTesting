@@ -57,8 +57,8 @@ public class AuthForm {
 
 //        driver.findElement(By.xpath("//a[@href='/logout']")).click(); works!
 
-        String expectedResult = driver.findElement(By.tagName("h2")).getText();
-        String actualResult = "Secure Area";
+        String expectedResult = "Secure Area";
+        String actualResult = driver.findElement(By.tagName("h2")).getText();
 
         Assertions.assertEquals(actualResult, expectedResult);
 
